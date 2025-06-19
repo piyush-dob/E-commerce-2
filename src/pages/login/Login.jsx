@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   async function getSignupUsers() {
-    let { data } = await axios.get("http://localhost:5050/users");
+    let { data } = await axios.get("https://e-commerce-2-4.onrender.com/users");
     console.log(data); //[{},{},{}]
     setAllusers(data);
   }
